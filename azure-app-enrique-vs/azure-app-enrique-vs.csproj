@@ -1,10 +1,16 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>azure_app_enrique_vs</RootNamespace>
+    <ApplicationInsightsResourceId>/subscriptions/ea42e9d6-e716-457e-9a0f-47034afb931b/resourceGroups/az-group-rg/providers/microsoft.insights/components/azure-app-enrique-vs</ApplicationInsightsResourceId>
+    <UserSecretsId>7c65c9ce-6a2f-4ed7-b4e1-0925b4c5f303</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.15.0" />
+  </ItemGroup>
 
 </Project>
